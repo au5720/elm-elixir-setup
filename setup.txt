@@ -39,4 +39,5 @@ sudo service postgresql restart
 # cd platform
 # mix ecto.create
 #
-
+# Some Extra Help With Postgres users
+# https://stackoverflow.com/questions/35785892/ecto-postgres-install-error-password-authentication-failed
