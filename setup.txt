@@ -35,8 +35,8 @@ mix archive.install hex phx_new 1.4.16 --force
 
 
 # Fix the Postgres password issue
-sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
-sudo service postgresql restart
+# sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+# sudo service postgresql restart
 
 
 # Create the new Phoenix App
