@@ -16,6 +16,10 @@ git config --global user.name "Jennifer"
 
 # Install Database
 apt-get -y install postgresql
+apt-get -y install postgresql-contrib
+
+
+
 #/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
 
 # Package manager for Elixir and Erlang
@@ -23,3 +27,16 @@ mix local.hex --force
 
 # Install Phoenix framework
 mix archive.install hex phx_new 1.4.16 --force
+
+
+# Fix the Postgres password issue
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+sudo service postgresql restart
+
+
+# Create the new Phoenix App
+# mix phx.new platform
+# cd platform
+# mix ecto.create
+#
+
