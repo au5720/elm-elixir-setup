@@ -5,18 +5,21 @@ wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo 
 sudo apt-get update
 
 # Install Erlang
-sudo apt-get install esl-erlang
+sudo apt-get -y install esl-erlang
 
 # Install elixir
-sudo apt-get install elixir
+sudo apt-get -y install elixir
 
 # Setup some git settings
 git config --global user.email "jennifermorgan2001@gmail.com"
 git config --global user.name "Jennifer"
 
 # Install Database
-apt-get install postgresql
+apt-get -y install postgresql
 #/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
 
 # Package manager for Elixir and Erlang
 mix local.hex --force
+
+# Install Phoenix framework
+mix archive.install hex phx_new 1.4.16 --force
