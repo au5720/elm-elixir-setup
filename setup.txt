@@ -18,7 +18,9 @@ git config --global user.name "Jennifer"
 apt-get -y install postgresql
 apt-get -y install postgresql-contrib
 
-
+# Install Node and Npm
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 #/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
 
