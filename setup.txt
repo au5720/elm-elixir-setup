@@ -1,0 +1,8 @@
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+sudo apt-get update
+sudo apt-get install esl-erlang
+sudo apt-get install elixir
+git config --global user.email "jennifermorgan2001@gmail.com"
+git config --global user.name "Jennifer"
+apt-get install postgesql
+/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
