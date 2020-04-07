@@ -29,6 +29,7 @@ apt-get -y install inotify-tools
 
 # Package manager for Elixir and Erlang
 mix local.hex --force
+mix local.rebar --force
 
 # Install Phoenix framework
 mix archive.install hex phx_new 1.4.16 --force
