@@ -22,6 +22,9 @@ apt-get -y install postgresql-contrib
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+# Some tools needed
+apt-get -y install inotify-tools
+
 #/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
 
 # Package manager for Elixir and Erlang
