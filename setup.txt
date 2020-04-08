@@ -58,12 +58,13 @@ mix archive.install hex phx_new 1.4.16 --force
 # heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git
 
 # New files with contents
-# touch elixir_-buildpack.config
+# touch elixir_buildpack.config
 # erlang_version=20.0
 # elixir_version=1.7.0
 # always_rebuild=true
 
 # touch Procfile
+# release: MIX_ENV=prod mix ecto.migrate
 # web: MIX_ENV=prod mix phx.server
 
 # heroku addons:create heroku-postgresql:hobby-dev
