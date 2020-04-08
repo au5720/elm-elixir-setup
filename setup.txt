@@ -52,3 +52,25 @@ mix archive.install hex phx_new 1.4.16 --force
 
 # Heroku Toolkit
 # snap install --classic heroku
+# heroku login -i
+# heroku git:remote -a jens-elixir-platform
+# heroku buildpacks:add https://github.com/HashNuke/heroku-buildpack-elixir.git
+# heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git
+
+# New files with contents
+# touch elixir_-buildpack.config
+# erlang_version=20.0
+# elixir_version=1.7.0
+# always_rebuild=true
+
+# touch Procfile
+# web: MIX_ENV=prod mix phx.server
+
+# heroku addons:create heroku-postgresql:hobby-dev
+# heroku config
+
+# mix phx.gen.secret
+# heroku config:set SECRET_BASE_KEY=""
+
+
+
