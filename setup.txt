@@ -24,6 +24,8 @@ sudo apt-get install -y nodejs
 
 # Some tools needed
 apt-get -y install inotify-tools
+apt install make
+apt-get -y install build-essential
 
 #/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
 
