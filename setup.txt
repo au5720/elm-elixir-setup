@@ -27,6 +27,7 @@ apt-get -y install inotify-tools
 
 #/usr/lib/postgresql/10/bin/pg_ctl -D /var/lib/postgresql/10/main -l logfile start
 
+
 # Package manager for Elixir and Erlang
 mix local.hex --force
 mix local.rebar --force
@@ -47,3 +48,7 @@ mix archive.install hex phx_new 1.4.16 --force
 #
 # Some Extra Help With Postgres users
 # https://stackoverflow.com/questions/35785892/ecto-postgres-install-error-password-authentication-failed
+
+
+# Heroku Toolkit
+# snap install --classic heroku
