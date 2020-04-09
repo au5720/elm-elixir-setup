@@ -22,6 +22,7 @@ apt-get -y install postgresql-contrib
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install -g elm --unsafe-perm=true --allow-root
+sudo npm install -g elm-format --unsafe-perm=true --allow-root
 
 # Some tools needed
 apt-get -y install inotify-tools
