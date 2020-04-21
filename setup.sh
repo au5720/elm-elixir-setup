@@ -132,5 +132,8 @@ iex -S mix <<'EOF'
 Platform.Products.create_game(%{title: "Platformer", description: "Platform game example.", thumbnail: "http://via.placeholder.com/300x200", featured: true})
 EOF
 
-
-
+# ELM LIBRARIES NEEDED
+# cd assets/elm
+# elm install elm/http
+# elm install elm/json
+#
