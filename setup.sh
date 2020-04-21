@@ -41,7 +41,7 @@ mix archive.install hex phx_new 1.4.16 --force
 
 
 # Fix the Postgres password issue
-# sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+# sudo -u postgres "psql -c \"ALTER USER postgres PASSWORD 'postgres';\" "
 # sudo service postgresql restart
 
 
@@ -106,4 +106,25 @@ mix archive.install hex phx_new 1.4.16 --force
 #node_version=13.12.0
 # We can set the version of NPM to use for the app here
 #npm_version=6.14.4
+
+###################################################
+#### STEPS TO RUN POST INSTALL OF THE ABOVE SCRIPT 
+###################################################
+
+git clone https://github.com/au5720/platform.git
+cd platform/
+su - postgres <<'EOF'
+psql -c "ALTER USER postgres PASSWORD 'postgres';" 
+EOF
+service restart postgres
+
+cd assets
+npm install
+cd ../
+
+mix deps.get
+mix ecto.create
+mix ecto.migrate
+mix phx.server
+
 
