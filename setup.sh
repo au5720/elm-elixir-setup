@@ -110,7 +110,7 @@ mix archive.install hex phx_new 1.4.16 --force
 ###################################################
 #### STEPS TO RUN POST INSTALL OF THE ABOVE SCRIPT 
 ###################################################
-
+cd ~/
 git clone https://github.com/au5720/platform.git
 cd platform/
 su - postgres <<'EOF'
